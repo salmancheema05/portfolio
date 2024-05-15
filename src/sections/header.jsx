@@ -3,72 +3,103 @@ import { Box, Typography, Button, Grid } from "@mui/material";
 import MyPic from "../images/mypic.png";
 const Header = () => {
   return (
-    <Box bgcolor="#32334C">
-      <Grid container spacing={2}>
-        <Grid item xs={12} sm={6} md={7} lg={7} xl={7}>
-          <Box
-            sx={{
-              pl: 10,
-              pr: 20,
-              height: "78.1vh",
-              pt: 10,
-            }}
-          >
-            <Box>
-              <Typography variant="p" color="white" fontWeight="600">
-                Salman Akbar Cheema
+    <Box
+      sx={{
+        backgroundImage: "linear-gradient(125deg, #110717 50%,#8750f7 )",
+      }}
+    >
+      <Box ml={10} mr={10}>
+        <Box pt={10} pb={5}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6} md={4} lg={5} xl={5}>
+              <Typography variant="h5" color="white" fontWeight={700}>
+                I am Salman Akbar
               </Typography>
-            </Box>
-            <Box fontSize={30}>
-              <Typography variant="h3" mt={3} color="white" fontWeight="700">
-                CREATIVE WEB & APP
+              <h1
+                style={{
+                  background:
+                    "-webkit-linear-gradient(90deg, #8e59f8  ,#e5dafd )",
+                  webkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  fontWeight: 700,
+                  marginTop: 5,
+                  fontSize: 50,
+                }}
+              >
+                React Developer +
+              </h1>
+              <h1
+                style={{
+                  background:
+                    "-webkit-linear-gradient(90deg, #8e59f8  ,#e5dafd )",
+                  webkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  fontWeight: 700,
+                  marginTop: 5,
+                  fontSize: 50,
+                }}
+              >
+                React Native
+              </h1>
+              <Typography
+                variant="p"
+                color="white"
+                fontSize={20}
+                fontWeight={500}
+              >
+                I break down complex user experinece problems to create
+                integritiy focussed solutions that connect billions of people
               </Typography>
-              <Typography variant="h3" mt={3} color="white" fontWeight="700">
-                DEVELOPER BASED
-              </Typography>
-              <Typography variant="h3" mt={3} color="white" fontWeight="700">
-                IN Pakistan
-              </Typography>
-            </Box>
-            <Box mt={10} fontSize={30}>
-              <Button
-                variant="outlined"
+              <Box mt={5}>
+                <Button
+                  variant="outlined"
+                  sx={{
+                    borderColor: "#8750f7",
+                    color: "#8750f7",
+                    height: 50,
+                    width: 200,
+                    borderRadius: 50,
+                    "&:hover": {
+                      bgcolor: "#8750f7",
+                      color: "white",
+                    },
+                  }}
+                >
+                  Download CV
+                </Button>
+              </Box>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              lg={7}
+              xl={7}
+              display="flex"
+              justifyContent="center"
+            >
+              <Box
+                width={250}
+                height={300}
+                border={2}
+                borderRadius={5}
                 sx={{
-                  color: "white",
-                  borderColor: "white",
-                  height: "50px",
+                  transform: "rotate(20deg)",
+                  transition: "transform 0.3s",
+                  borderColor: "#110717",
                   "&:hover": {
-                    borderColor: "white",
-                    background: "white",
-                    color: "#32334C",
+                    transform: "rotate(0deg)", // Rotate the Box by 45 degrees on hover
+                    borderColor: "#8750f7",
                   },
                 }}
               >
-                See My Project
-              </Button>
-              <Button
-                variant="outlined"
-                sx={{
-                  color: "white",
-                  ml: 3,
-                  borderColor: "white",
-                  height: "50px",
-                  "&:hover": {
-                    borderColor: "white",
-                    background: "white",
-                    color: "#32334C",
-                  },
-                }}
-              >
-                Download CV
-              </Button>
-            </Box>
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={6} md={5} lg={5} xl={5}>
-          <img src={MyPic} width="100%" height="570" />
-        </Grid>
-      </Grid>
+                <img src={MyPic} width="100%" height="100%" />
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
+      </Box>
     </Box>
   );
 };

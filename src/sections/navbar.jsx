@@ -6,14 +6,21 @@ const Navbar = () => {
     <Box
       sx={{
         display: "flex",
-        background: "#32334C",
+        backgroundImage: "linear-gradient(150deg, #110717 66%,#8750f7  )",
         pl: 10,
         pr: 20,
         height: 60,
         lineHeight: 1,
+        pt: 3,
       }}
     >
-      <p style={{ color: "white", fontSize: 20, fontWeight: 600 }}>SAC</p>
+      <Box display="flex">
+        <p style={{ color: "white", fontSize: 50, fontWeight: 600 }}>S</p>
+        <p style={{ color: "white", marginLeft: 30, marginTop: 20 }}>
+          salmanakbartnt12@gmail.com
+        </p>
+      </Box>
+
       <Box
         sx={{
           display: "flex",

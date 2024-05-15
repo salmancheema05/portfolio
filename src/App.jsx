@@ -10,10 +10,10 @@ const App = () => {
     <>
       <Navbar />
       <Header />
-      <About />
+      {/* <About />
       <Skills />
       <Projects />
-      <Footer />
+      <Footer /> */}
     </>
   );
 };
