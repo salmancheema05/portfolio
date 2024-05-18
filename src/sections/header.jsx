@@ -89,6 +89,7 @@ const Header = () => {
                   transform: "rotate(20deg)",
                   transition: "transform 0.3s",
                   borderColor: "#110717",
+
                   "&:hover": {
                     transform: "rotate(0deg)", // Rotate the Box by 45 degrees on hover
                     borderColor: "#8750f7",
