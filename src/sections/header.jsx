@@ -1,72 +1,70 @@
 import React from "react";
 import { Box, Typography, Button, Grid } from "@mui/material";
 import MyPic from "../images/mypic.png";
+import { FaFacebookF } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io";
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa6";
+import DefaultHeadings from "../components/headings";
+import DefaultIcon from "../components/icon";
+import DefaultParagraph from "../components/paragraph";
+import DefaultBox from "../components/box";
+
 const Header = () => {
   return (
     <Box
       sx={{
-        backgroundImage: "linear-gradient(125deg, #110717 50%,#8750f7 )",
+        background: "linear-gradient(125deg, #110717 50%,#8750f7 )",
       }}
     >
-      <Box ml={10} mr={10}>
+      <DefaultBox>
         <Box pt={10} pb={5}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={4} lg={5} xl={5}>
-              <Typography variant="h5" color="white" fontWeight={700}>
-                I am Salman Akbar
-              </Typography>
-              <h1
-                style={{
-                  background:
-                    "-webkit-linear-gradient(90deg, #8e59f8  ,#e5dafd )",
-                  webkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  fontWeight: 700,
-                  marginTop: 5,
-                  fontSize: 50,
-                }}
-              >
-                React Developer +
-              </h1>
-              <h1
-                style={{
-                  background:
-                    "-webkit-linear-gradient(90deg, #8e59f8  ,#e5dafd )",
-                  webkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  fontWeight: 700,
-                  marginTop: 5,
-                  fontSize: 50,
-                }}
-              >
-                React Native
-              </h1>
-              <Typography
-                variant="p"
-                color="white"
-                fontSize={20}
-                fontWeight={500}
-              >
-                I break down complex user experinece problems to create
-                integritiy focussed solutions that connect billions of people
-              </Typography>
-              <Box mt={5}>
-                <Button
-                  variant="outlined"
-                  sx={{
-                    borderColor: "#8750f7",
-                    color: "#8750f7",
-                    height: 50,
-                    width: 200,
-                    borderRadius: 50,
-                    "&:hover": {
-                      bgcolor: "#8750f7",
-                      color: "white",
-                    },
-                  }}
+              <Box>
+                <Typography variant="h5" color="white" fontWeight={700}>
+                  I am Salman Akbar
+                </Typography>
+              </Box>
+              <Box mt={3}>
+                <DefaultHeadings tag="h1">React Developer +</DefaultHeadings>
+                <DefaultHeadings tag="h1">React Native</DefaultHeadings>
+              </Box>
+              <Box mt={3}>
+                <DefaultParagraph>
+                  I break down complex user experinece problems to create
+                  integritiy focussed solutions that connect billions of people
+                </DefaultParagraph>
+              </Box>
+              <Box mt={5} display="flex">
+                <Box>
+                  <Button
+                    variant="outlined"
+                    sx={{
+                      borderColor: "#8750f7",
+                      color: "#8750f7",
+                      height: 50,
+                      width: 200,
+                      borderRadius: 50,
+                      "&:hover": {
+                        bgcolor: "#8750f7",
+                        color: "white",
+                      },
+                    }}
+                  >
+                    Download CV
+                  </Button>
+                </Box>
+                <Box
+                  ml={2}
+                  width="100%"
+                  display="flex"
+                  justifyContent="space-between"
                 >
-                  Download CV
-                </Button>
+                  <DefaultIcon icon={<FaFacebookF fontSize={18} />} />
+                  <DefaultIcon icon={<IoLogoGithub fontSize={18} />} />
+                  <DefaultIcon icon={<FaLinkedinIn fontSize={18} />} />
+                  <DefaultIcon icon={<FaTwitter fontSize={18} />} />
+                </Box>
               </Box>
             </Grid>
             <Grid
@@ -80,10 +78,11 @@ const Header = () => {
               justifyContent="center"
             >
               <Box
-                width={250}
-                height={300}
+                width={300}
+                height={400}
                 border={2}
                 borderRadius={5}
+                mb={4.1}
                 sx={{
                   transform: "rotate(20deg)",
                   transition: "transform 0.3s",
@@ -99,7 +98,7 @@ const Header = () => {
             </Grid>
           </Grid>
         </Box>
-      </Box>
+      </DefaultBox>
     </Box>
   );
 };

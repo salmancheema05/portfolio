@@ -2,21 +2,36 @@ import React from "react";
 import { Box, Typography, Grid } from "@mui/material";
 import { Line, Circle } from "rc-progress";
 import DefaultCircularProgressBar from "./circularProgressbar";
+import DefaultBox from "../components/box";
+import DefaultHeading from "../components/headings";
+import DefaultParagraph from "../components/paragraph";
 
 const Skills = () => {
-  const percentage = 90;
   return (
-    <Box pl={10} pr={10} bgcolor="#32334C">
-      <Box pt={20} pb={20}>
+    <Box bgcolor="#050709" pb={20}>
+      <DefaultBox>
         <Grid container spacing={5}>
+          <Grid item xs={12} sm={6} md={12} lg={12} xl={12}>
+            <DefaultHeading tag="h3" textposition="center">
+              My Skills
+            </DefaultHeading>
+            <Box mt={3} textAlign="center">
+              <DefaultParagraph>
+                We put your ideas and thus your wishes in the form of a unique
+                web project that
+              </DefaultParagraph>
+            </Box>
+            <Box textAlign="center" mt={1}>
+              <DefaultParagraph>
+                inspires you and you customers.
+              </DefaultParagraph>
+            </Box>
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={5} mt={5}>
           <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-            <Box
-              width="100%"
-              height="400px"
-              bgcolor="#32334C"
-              boxShadow=" 1px 1px 10px 1px gray"
-              borderRadius={5}
-            >
+            <Box width="100%" height="400px" bgcolor="#140c1c" borderRadius={5}>
               <Box textAlign="center" pt={5}>
                 <Typography variant="h4" mb={5} color="white">
                   React JS
@@ -28,13 +43,7 @@ const Skills = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-            <Box
-              width="100%"
-              height="400px"
-              bgcolor="#32334C"
-              boxShadow=" 1px 1px 10px 1px gray"
-              borderRadius={5}
-            >
+            <Box width="100%" height="400px" bgcolor="#140c1c" borderRadius={5}>
               <Box textAlign="center" pt={5}>
                 <Typography variant="h4" mb={5} color="white">
                   React Native
@@ -46,13 +55,7 @@ const Skills = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-            <Box
-              width="100%"
-              height="400px"
-              bgcolor="#32334C"
-              boxShadow=" 1px 1px 10px 1px gray"
-              borderRadius={5}
-            >
+            <Box width="100%" height="400px" bgcolor="#140c1c" borderRadius={5}>
               <Box textAlign="center" pt={5}>
                 <Typography variant="h4" mb={5} color="white">
                   TypeScript
@@ -74,7 +77,7 @@ const Skills = () => {
                 <Line
                   percent={95}
                   strokeWidth={1}
-                  strokeColor="white"
+                  strokeColor="#8750f7"
                   trailColor="gray"
                   height={10}
                 />
@@ -93,7 +96,7 @@ const Skills = () => {
                 <Line
                   percent={90}
                   strokeWidth={1}
-                  strokeColor="white"
+                  strokeColor="#8750f7"
                   trailColor="gray"
                   height={10}
                 />
@@ -112,7 +115,7 @@ const Skills = () => {
                 <Line
                   percent={95}
                   strokeWidth={1}
-                  strokeColor="white"
+                  strokeColor="#8750f7"
                   trailColor="gray"
                   height={10}
                 />
@@ -131,7 +134,7 @@ const Skills = () => {
                 <Line
                   percent={85}
                   strokeWidth={1}
-                  strokeColor="white"
+                  strokeColor="#8750f7  "
                   trailColor="gray"
                   height={10}
                 />
@@ -142,7 +145,7 @@ const Skills = () => {
             </Box>
           </Grid>
         </Grid>
-      </Box>
+      </DefaultBox>
     </Box>
   );
 };
