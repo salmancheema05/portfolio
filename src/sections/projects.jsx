@@ -9,7 +9,7 @@ import DefaultBox from "../components/box";
 import DefaultParagraph from "../components/paragraph";
 const Projects = () => {
   return (
-    <Box bgcolor="#0f0716" pb={20}>
+    <Box bgcolor="#0f0716" pb={20} id="work">
       <DefaultBox>
         <Box pt={5} pb={5}>
           <Grid container spacing={2}>

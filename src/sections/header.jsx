@@ -14,7 +14,10 @@ const Header = () => {
     <Box
       sx={{
         background: "linear-gradient(125deg, #110717 50%,#8750f7 )",
+        mt: 10,
+        height: "100vh",
       }}
+      id="home"
     >
       <DefaultBox>
         <Box pt={10} pb={5}>
@@ -82,7 +85,6 @@ const Header = () => {
                 height={400}
                 border={2}
                 borderRadius={5}
-                mb={4.1}
                 sx={{
                   transform: "rotate(20deg)",
                   transition: "transform 0.3s",

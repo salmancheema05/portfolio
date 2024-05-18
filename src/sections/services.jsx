@@ -5,7 +5,7 @@ import DefaultBox from "../components/box";
 import DefaultParagraph from "../components/paragraph";
 const Services = () => {
   return (
-    <Box bgcolor="#050709" pb={20}>
+    <Box bgcolor="#050709" pb={20} id="services">
       <DefaultBox>
         <Box pt={5} pb={5}>
           <Grid container spacing={2}>
