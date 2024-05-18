@@ -1,6 +1,6 @@
 import React from "react";
 
-const DefaultHeadings = ({ tag, children, textposition = "left" }) => {
+const DefaultHeadings = ({ tag, children, textposition = "left", styles }) => {
   const Tag = tag;
   return (
     <Tag
@@ -12,6 +12,7 @@ const DefaultHeadings = ({ tag, children, textposition = "left" }) => {
         marginTop: 5,
         fontSize: 50,
         textAlign: textposition,
+        ...styles,
       }}
     >
       {children}

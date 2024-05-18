@@ -8,8 +8,9 @@ import DefaultHeadings from "../components/headings";
 import DefaultIcon from "../components/icon";
 import DefaultParagraph from "../components/paragraph";
 import DefaultBox from "../components/box";
-
+import useResponsive from "../hook/useResponsive";
 const Header = () => {
+  const { isSmallScreen, isMediumScreen, isExtraSmallScreen } = useResponsive();
   return (
     <Box
       sx={{
@@ -22,15 +23,41 @@ const Header = () => {
       <DefaultBox>
         <Box pt={10} pb={5}>
           <Grid container spacing={2}>
-            <Grid item xs={12} sm={6} md={4} lg={5} xl={5}>
+            <Grid item xs={12} sm={12} md={7} lg={5} xl={5}>
               <Box>
                 <Typography variant="h5" color="white" fontWeight={700}>
                   I am Salman Akbar
                 </Typography>
               </Box>
               <Box mt={3}>
-                <DefaultHeadings tag="h1">React Developer +</DefaultHeadings>
-                <DefaultHeadings tag="h1">React Native</DefaultHeadings>
+                <DefaultHeadings
+                  tag="h1"
+                  styles={{
+                    fontSize: isSmallScreen
+                      ? 50
+                      : isExtraSmallScreen
+                      ? 50
+                      : isMediumScreen
+                      ? 40
+                      : 50,
+                  }}
+                >
+                  React Developer +
+                </DefaultHeadings>
+                <DefaultHeadings
+                  tag="h1"
+                  styles={{
+                    fontSize: isSmallScreen
+                      ? 50
+                      : isExtraSmallScreen
+                      ? 50
+                      : isMediumScreen
+                      ? 40
+                      : 50,
+                  }}
+                >
+                  React Native
+                </DefaultHeadings>
               </Box>
               <Box mt={3}>
                 <DefaultParagraph>
@@ -74,18 +101,23 @@ const Header = () => {
               item
               xs={12}
               sm={6}
-              md={4}
+              md={5}
               lg={7}
               xl={7}
               display="flex"
               justifyContent="center"
             >
               <Box
-                width={300}
-                height={400}
                 border={2}
                 borderRadius={5}
                 sx={{
+                  width: isMediumScreen ? 250 : 300,
+                  height: isMediumScreen ? 350 : 400,
+                  display: isSmallScreen
+                    ? "none"
+                    : isExtraSmallScreen
+                    ? "none"
+                    : "block",
                   transform: "rotate(20deg)",
                   transition: "transform 0.3s",
                   borderColor: "#110717",
