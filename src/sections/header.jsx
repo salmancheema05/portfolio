@@ -36,7 +36,7 @@ const Header = () => {
                     fontSize: isSmallScreen
                       ? 50
                       : isExtraSmallScreen
-                      ? 50
+                      ? 40
                       : isMediumScreen
                       ? 40
                       : 50,
@@ -50,7 +50,7 @@ const Header = () => {
                     fontSize: isSmallScreen
                       ? 50
                       : isExtraSmallScreen
-                      ? 50
+                      ? 30
                       : isMediumScreen
                       ? 40
                       : 50,
@@ -65,7 +65,13 @@ const Header = () => {
                   integritiy focussed solutions that connect billions of people
                 </DefaultParagraph>
               </Box>
-              <Box mt={5} display="flex">
+              <Box
+                mt={5}
+                sx={{
+                  display: "flex",
+                  flexDirection: isExtraSmallScreen ? "column" : "row",
+                }}
+              >
                 <Box>
                   <Button
                     variant="outlined"
@@ -85,10 +91,13 @@ const Header = () => {
                   </Button>
                 </Box>
                 <Box
-                  ml={2}
                   width="100%"
                   display="flex"
-                  justifyContent="space-between"
+                  sx={{
+                    mt: isExtraSmallScreen ? 4 : 0,
+                    ml: isExtraSmallScreen ? 0 : 4,
+                    justifyContent: "space-between",
+                  }}
                 >
                   <DefaultIcon icon={<FaFacebookF fontSize={18} />} />
                   <DefaultIcon icon={<IoLogoGithub fontSize={18} />} />

@@ -11,7 +11,6 @@ const DefaultIcon = ({ icon }) => {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      textAlign="center"
       color="#8750f7"
       sx={{
         cursor: "pointer",
