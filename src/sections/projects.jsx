@@ -6,7 +6,7 @@ import App1 from "../images/app1.jpeg";
 import App2 from "../images/app2.jpeg";
 import DefaultHeadings from "../components/headings";
 import DefaultBox from "../components/box";
-import DefaultParagraph from "../components/paragraph";
+import DefaultParagraph, { SectionParagraph } from "../components/paragraph";
 const Projects = () => {
   return (
     <Box bgcolor="#0f0716" pb={20} id="work">
@@ -17,17 +17,13 @@ const Projects = () => {
               <DefaultHeadings tag="h3" textposition="center">
                 My Recent Works
               </DefaultHeadings>
-              <Box mt={3} textAlign="center">
-                <DefaultParagraph>
-                  We put your ideas and thus your wishes in the form of a unique
-                  web project that
-                </DefaultParagraph>
-              </Box>
-              <Box textAlign="center" mt={1}>
-                <DefaultParagraph>
-                  inspires you and you customers.
-                </DefaultParagraph>
-              </Box>
+              <SectionParagraph
+                text1=" We put your ideas and thus your wishes in the form of a unique
+                web project that"
+                text2="inspires you and you customers."
+                text3="We put your ideas and thus your wishes in the form of a unique
+              web project that inspires you and you customers."
+              />
             </Grid>
           </Grid>
           <Grid container spacing={5} mt={5}>

@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Grid } from "@mui/material";
 import DefaultHeadings from "../components/headings";
 import DefaultBox from "../components/box";
-import DefaultParagraph from "../components/paragraph";
+import DefaultParagraph, { SectionParagraph } from "../components/paragraph";
 const Services = () => {
   return (
     <Box bgcolor="#050709" pb={20} id="services">
@@ -13,17 +13,13 @@ const Services = () => {
               <DefaultHeadings tag="h3" textposition="center">
                 My Quality Services
               </DefaultHeadings>
-              <Box mt={5} textAlign="center">
-                <DefaultParagraph>
-                  We put your ideas and thus your wishes in the form of a unique
-                  web project that
-                </DefaultParagraph>
-              </Box>
-              <Box textAlign="center" mt={1}>
-                <DefaultParagraph>
-                  inspires you and you customers.
-                </DefaultParagraph>
-              </Box>
+              <SectionParagraph
+                text1=" We put your ideas and thus your wishes in the form of a unique
+                web project that"
+                text2="inspires you and you customers."
+                text3="We put your ideas and thus your wishes in the form of a unique
+              web project that inspires you and you customers."
+              />
             </Grid>
           </Grid>
           <Grid mt={10}>

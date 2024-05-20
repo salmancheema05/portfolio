@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Typography, Grid } from "@mui/material";
-import { Line, Circle } from "rc-progress";
+import { Line } from "rc-progress";
 import DefaultCircularProgressBar from "./circularProgressbar";
 import DefaultBox from "../components/box";
 import DefaultHeading from "../components/headings";
-import DefaultParagraph from "../components/paragraph";
+import { SectionParagraph } from "../components/paragraph";
 
 const Skills = () => {
   return (
@@ -15,17 +15,13 @@ const Skills = () => {
             <DefaultHeading tag="h3" textposition="center">
               My Skills
             </DefaultHeading>
-            <Box mt={3} textAlign="center">
-              <DefaultParagraph>
-                We put your ideas and thus your wishes in the form of a unique
-                web project that
-              </DefaultParagraph>
-            </Box>
-            <Box textAlign="center" mt={1}>
-              <DefaultParagraph>
-                inspires you and you customers.
-              </DefaultParagraph>
-            </Box>
+            <SectionParagraph
+              text1=" We put your ideas and thus your wishes in the form of a unique
+                web project that"
+              text2="inspires you and you customers."
+              text3="We put your ideas and thus your wishes in the form of a unique
+              web project that inspires you and you customers."
+            />
           </Grid>
         </Grid>
 

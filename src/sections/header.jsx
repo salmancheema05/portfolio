@@ -60,7 +60,9 @@ const Header = () => {
                 </DefaultHeadings>
               </Box>
               <Box mt={3}>
-                <DefaultParagraph>
+                <DefaultParagraph
+                  style={{ fontSize: isExtraSmallScreen ? 20 : null }}
+                >
                   I break down complex user experinece problems to create
                   integritiy focussed solutions that connect billions of people
                 </DefaultParagraph>
