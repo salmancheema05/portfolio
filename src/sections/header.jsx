@@ -11,6 +11,15 @@ import DefaultBox from "../components/box";
 import useResponsive from "../hook/useResponsive";
 const Header = () => {
   const { isSmallScreen, isMediumScreen, isExtraSmallScreen } = useResponsive();
+  const downloadCv = () => {
+    const pdfUrl = "https://salmancheema05.github.io/portfolio/cv.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "cv.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <Box
       sx={{
@@ -88,6 +97,7 @@ const Header = () => {
                         color: "white",
                       },
                     }}
+                    onClick={() => downloadCv()}
                   >
                     Download CV
                   </Button>
