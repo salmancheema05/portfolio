@@ -3,7 +3,7 @@ import { Box, Typography, Button, Grid } from "@mui/material";
 import MyPic from "../images/mypic.png";
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
-import { FaLinkedinIn, FaTwitter } from "react-icons/fa6";
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa6";
 import DefaultHeadings from "../components/headings";
 import DefaultIcon from "../components/icon";
 import DefaultParagraph from "../components/paragraph";
@@ -113,9 +113,18 @@ const Header = () => {
                   }}
                 >
                   <DefaultIcon icon={<FaFacebookF fontSize={18} />} />
-                  <DefaultIcon icon={<IoLogoGithub fontSize={18} />} />
-                  <DefaultIcon icon={<FaLinkedinIn fontSize={18} />} />
-                  <DefaultIcon icon={<FaTwitter fontSize={18} />} />
+                  <DefaultIcon
+                    icon={<IoLogoGithub fontSize={18} />}
+                    link="https://github.com/salmancheema05"
+                  />
+                  <DefaultIcon
+                    icon={<FaLinkedinIn fontSize={18} />}
+                    link="https://www.linkedin.com/in/salman-cheema-8a983a27a/"
+                  />
+                  <DefaultIcon
+                    icon={<FaInstagram fontSize={18} />}
+                    link="https://www.instagram.com/salmanakbar3731/"
+                  />
                 </Box>
               </Box>
             </Grid>

@@ -42,7 +42,7 @@ const Projects = () => {
                   },
                 }}
               >
-                <Box p={4}>
+                <Box p={4} height={225}>
                   <img src={Web1} width="100%" height="100%" />
                 </Box>
                 <Box
@@ -91,13 +91,12 @@ const Projects = () => {
                   overflow: "hidden",
                   "&:hover": {
                     "&  .overlay": {
-                      // Selects sibling elements with class overlay
-                      bottom: 0, // Moves the overlay to the bottom
+                      bottom: 0,
                     },
                   },
                 }}
               >
-                <Box p={4}>
+                <Box p={4} height={225}>
                   <img src={Web2} width="100%" height="100%" />
                 </Box>
                 <Box

@@ -50,7 +50,7 @@ const Services = () => {
                 </Box>
                 <Box width={"50%"} display="flex" alignItems="center">
                   <DefaultParagraph fontSize={35}>
-                    Web Deveroper full Stack
+                    Web Development (Mern Stack)
                   </DefaultParagraph>
                 </Box>
                 <Box
@@ -85,11 +85,11 @@ const Services = () => {
                   justifyContent="center"
                   alignItems="center"
                 >
-                  <DefaultParagraph color="#8750f7">01</DefaultParagraph>
+                  <DefaultParagraph color="#8750f7">02</DefaultParagraph>
                 </Box>
                 <Box width={"50%"} display="flex" alignItems="center">
                   <DefaultParagraph fontSize={35}>
-                    Web Deveroper full Stack
+                    Web Development (React Js)
                   </DefaultParagraph>
                 </Box>
                 <Box
@@ -124,11 +124,11 @@ const Services = () => {
                   justifyContent="center"
                   alignItems="center"
                 >
-                  <DefaultParagraph color="#8750f7">01</DefaultParagraph>
+                  <DefaultParagraph color="#8750f7">03</DefaultParagraph>
                 </Box>
                 <Box width={"50%"} display="flex" alignItems="center">
                   <DefaultParagraph fontSize={35}>
-                    Web Deveroper full Stack
+                    Mobile APP Development (React Native )
                   </DefaultParagraph>
                 </Box>
                 <Box
