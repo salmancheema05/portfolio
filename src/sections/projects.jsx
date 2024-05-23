@@ -31,15 +31,13 @@ const Projects = () => {
               <Box
                 bgcolor="#140c1c"
                 width="100%"
-                height={300}
                 borderRadius={5}
                 sx={{
                   position: "relative",
                   overflow: "hidden",
                   "&:hover": {
                     "&  .overlay": {
-                      // Selects sibling elements with class overlay
-                      bottom: 0, // Moves the overlay to the bottom
+                      bottom: 0,
                     },
                   },
                 }}
@@ -87,7 +85,6 @@ const Projects = () => {
               <Box
                 bgcolor="#140c1c"
                 width="100%"
-                height={300}
                 borderRadius={5}
                 sx={{
                   position: "relative",

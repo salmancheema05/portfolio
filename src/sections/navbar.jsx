@@ -58,7 +58,7 @@ const Navbar = () => {
               marginTop: 20,
             }}
           >
-            salmanakbartnt12@gmail.com
+            salmancheematnt12@gmail.com
           </p>
         </Box>
         <Box>
@@ -130,6 +130,7 @@ const Navbar = () => {
           <li
             style={{
               borderBottom: selectedMenu == "home" ? "1px solid white" : null,
+              width: isSmallScreen ? 43 : isExtraSmallScreen ? 43 : null,
             }}
             onClick={() => handleScroll("home")}
           >
@@ -147,6 +148,7 @@ const Navbar = () => {
           <li
             style={{
               borderBottom: selectedMenu == "skills" ? "1px solid white" : null,
+              width: isSmallScreen ? 36 : isExtraSmallScreen ? 36 : null,
             }}
             onClick={() => handleScroll("skills")}
           >
@@ -155,6 +157,7 @@ const Navbar = () => {
           <li
             style={{
               borderBottom: selectedMenu == "work" ? "1px solid white" : null,
+              width: isSmallScreen ? 40 : isExtraSmallScreen ? 40 : null,
             }}
             onClick={() => handleScroll("work")}
           >

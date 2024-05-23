@@ -25,7 +25,6 @@ const Header = () => {
       sx={{
         background: "linear-gradient(125deg, #110717 50%,#8750f7 )",
         mt: 10,
-        height: "100vh",
       }}
       id="home"
     >
@@ -43,7 +42,7 @@ const Header = () => {
                   tag="h1"
                   styles={{
                     fontSize: isSmallScreen
-                      ? 50
+                      ? 80
                       : isExtraSmallScreen
                       ? 40
                       : isMediumScreen
@@ -57,9 +56,9 @@ const Header = () => {
                   tag="h1"
                   styles={{
                     fontSize: isSmallScreen
-                      ? 50
+                      ? 80
                       : isExtraSmallScreen
-                      ? 30
+                      ? 40
                       : isMediumScreen
                       ? 40
                       : 50,
@@ -70,7 +69,9 @@ const Header = () => {
               </Box>
               <Box mt={3}>
                 <DefaultParagraph
-                  style={{ fontSize: isExtraSmallScreen ? 20 : null }}
+                  style={{
+                    fontSize: isExtraSmallScreen ? 16 : 20,
+                  }}
                 >
                   I break down complex user experinece problems to create
                   integritiy focussed solutions that connect billions of people
@@ -142,6 +143,7 @@ const Header = () => {
                   transform: "rotate(20deg)",
                   transition: "transform 0.3s",
                   borderColor: "#110717",
+                  mb: 4,
 
                   "&:hover": {
                     transform: "rotate(0deg)", // Rotate the Box by 45 degrees on hover

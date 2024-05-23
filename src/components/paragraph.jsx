@@ -7,7 +7,6 @@ const DefaultParagraph = ({ children, style }) => {
     <Typography
       variant="p"
       color="white"
-      fontSize={20}
       fontWeight={500}
       sx={{
         fontSize: isSmallScreen ? 14 : isExtraSmallScreen ? 12 : 20,

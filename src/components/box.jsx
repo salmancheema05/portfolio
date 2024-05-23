@@ -6,8 +6,8 @@ const DefaultBox = ({ children }) => {
   return (
     <Box
       sx={{
-        pl: isExtraSmallScreen ? 2 : isSmallScreen ? 2 : 10,
-        pr: isExtraSmallScreen ? 2 : isSmallScreen ? 2 : 10,
+        pl: isExtraSmallScreen ? 2.5 : isSmallScreen ? 5 : 10,
+        pr: isExtraSmallScreen ? 2.5 : isSmallScreen ? 5 : 10,
       }}
     >
       {children}
