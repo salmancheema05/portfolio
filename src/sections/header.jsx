@@ -73,8 +73,9 @@ const Header = () => {
                     fontSize: isExtraSmallScreen ? 16 : 20,
                   }}
                 >
-                  I break down complex user experinece problems to create
-                  integritiy focussed solutions that connect billions of people
+                  I develop customized web and mobile applications tailored to
+                  your business needs, enhancing your digital presence and user
+                  experience.
                 </DefaultParagraph>
               </Box>
               <Box

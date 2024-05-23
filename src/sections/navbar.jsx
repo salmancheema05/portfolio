@@ -153,6 +153,7 @@ const Navbar = () => {
             style={{
               borderBottom: selectedMenu == "home" ? "1px solid white" : null,
               width: isSmallScreen ? 43 : isExtraSmallScreen ? 43 : null,
+              paddingBottom: 5,
             }}
             onClick={() => handleScroll("home")}
           >
@@ -162,6 +163,7 @@ const Navbar = () => {
             style={{
               borderBottom:
                 selectedMenu == "services" ? "1px solid white" : null,
+              paddingBottom: 5,
             }}
             onClick={() => handleScroll("services")}
           >
@@ -171,6 +173,7 @@ const Navbar = () => {
             style={{
               borderBottom: selectedMenu == "work" ? "1px solid white" : null,
               width: isSmallScreen ? 40 : isExtraSmallScreen ? 40 : null,
+              paddingBottom: 5,
             }}
             onClick={() => handleScroll("work")}
           >
@@ -180,6 +183,7 @@ const Navbar = () => {
             style={{
               borderBottom: selectedMenu == "skills" ? "1px solid white" : null,
               width: isSmallScreen ? 36 : isExtraSmallScreen ? 36 : null,
+              paddingBottom: 5,
             }}
             onClick={() => handleScroll("skills")}
           >
