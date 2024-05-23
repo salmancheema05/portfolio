@@ -42,9 +42,9 @@ const Header = () => {
                   tag="h1"
                   styles={{
                     fontSize: isSmallScreen
-                      ? 80
+                      ? 70
                       : isExtraSmallScreen
-                      ? 40
+                      ? 35
                       : isMediumScreen
                       ? 40
                       : 50,
@@ -56,9 +56,9 @@ const Header = () => {
                   tag="h1"
                   styles={{
                     fontSize: isSmallScreen
-                      ? 80
+                      ? 70
                       : isExtraSmallScreen
-                      ? 40
+                      ? 35
                       : isMediumScreen
                       ? 40
                       : 50,

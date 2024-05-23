@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Box } from "@mui/material";
 import useResponsive from "../hook/useResponsive";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -10,6 +10,7 @@ const Navbar = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      console.log(element);
       setSelectedMenu(sectionId);
       setToggle("none");
     }
@@ -17,6 +18,27 @@ const Navbar = () => {
   const handleToggle = () => {
     setToggle((prev) => (prev === "none" ? "flex" : "none")); // Toggle between "none" and "flex"
   };
+  useEffect(() => {
+    const activeMenuByScroll = () => {
+      const sections = document.querySelectorAll("div[id]");
+      let currentSection = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+          currentSection = section.getAttribute("id");
+        }
+      });
+
+      setSelectedMenu(currentSection);
+    };
+    window.addEventListener("scroll", activeMenuByScroll);
+
+    return () => {
+      window.removeEventListener("scroll", activeMenuByScroll);
+    };
+  }, []);
   return (
     <Box
       sx={{
@@ -147,21 +169,21 @@ const Navbar = () => {
           </li>
           <li
             style={{
-              borderBottom: selectedMenu == "skills" ? "1px solid white" : null,
-              width: isSmallScreen ? 36 : isExtraSmallScreen ? 36 : null,
-            }}
-            onClick={() => handleScroll("skills")}
-          >
-            Skills
-          </li>
-          <li
-            style={{
               borderBottom: selectedMenu == "work" ? "1px solid white" : null,
               width: isSmallScreen ? 40 : isExtraSmallScreen ? 40 : null,
             }}
             onClick={() => handleScroll("work")}
           >
             Work
+          </li>
+          <li
+            style={{
+              borderBottom: selectedMenu == "skills" ? "1px solid white" : null,
+              width: isSmallScreen ? 36 : isExtraSmallScreen ? 36 : null,
+            }}
+            onClick={() => handleScroll("skills")}
+          >
+            Skills
           </li>
         </ul>
       </Box>
