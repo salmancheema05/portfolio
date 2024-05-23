@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, Grid } from "@mui/material";
 import useResponsive from "../hook/useResponsive";
 const Footer = () => {
-  const { isSmallScreen, isMediumScreen, isExtraSmallScreen } = useResponsive();
+  const { isExtraSmallScreen } = useResponsive();
   return (
     <Box bgcolor="#0f0716">
       <Box pt={3} pb={3}>
@@ -14,7 +14,7 @@ const Footer = () => {
               textAlign="center"
               sx={{ fontSize: isExtraSmallScreen ? 18 : null }}
             >
-              Salman Akbar Cheema developer is available for you
+              I am available to develop your website and mobile app.
             </Typography>
           </Grid>
         </Grid>

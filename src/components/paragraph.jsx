@@ -18,7 +18,7 @@ const DefaultParagraph = ({ children, style }) => {
   );
 };
 export const SectionParagraph = ({ text1, text2, text3 }) => {
-  const { isSmallScreen, isExtraSmallScreen } = useResponsive();
+  const { isExtraSmallScreen } = useResponsive();
   return (
     <>
       <Box
@@ -35,7 +35,13 @@ export const SectionParagraph = ({ text1, text2, text3 }) => {
       >
         <DefaultParagraph>{text2}</DefaultParagraph>
       </Box>
-      <Box sx={{ display: isExtraSmallScreen ? "block" : "none", mt: 3 }}>
+      <Box
+        sx={{
+          display: isExtraSmallScreen ? "block" : "none",
+          mt: 3,
+          textAlign: "center",
+        }}
+      >
         <DefaultParagraph>{text3}</DefaultParagraph>
       </Box>
     </>

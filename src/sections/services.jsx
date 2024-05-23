@@ -5,9 +5,9 @@ import DefaultBox from "../components/box";
 import DefaultParagraph, { SectionParagraph } from "../components/paragraph";
 import useResponsive from "../hook/useResponsive";
 const Services = () => {
-  const { isSmallScreen, isMediumScreen, isExtraSmallScreen } = useResponsive();
+  const { isSmallScreen, isExtraSmallScreen } = useResponsive();
   return (
-    <Box bgcolor="#050709" pb={20} id="services">
+    <Box bgcolor="#050709" pb={10} id="services">
       <DefaultBox>
         <Box pt={5} pb={5}>
           <Grid container spacing={2}>
@@ -37,8 +37,7 @@ const Services = () => {
                     : isExtraSmallScreen
                     ? "column"
                     : "row",
-                  pl: isSmallScreen ? 1 : isExtraSmallScreen ? 3 : 0,
-                  pr: isSmallScreen ? 1 : isExtraSmallScreen ? 3 : 0,
+                  p: isSmallScreen ? 2 : isExtraSmallScreen ? 2 : null,
                   transition: "all 0.5s",
                   "&:hover": {
                     bgcolor: "#8750f7",
@@ -110,8 +109,7 @@ const Services = () => {
                     : isExtraSmallScreen
                     ? "column"
                     : "row",
-                  pl: isSmallScreen ? 1 : isExtraSmallScreen ? 3 : 0,
-                  pr: isSmallScreen ? 1 : isExtraSmallScreen ? 3 : 0,
+                  p: isSmallScreen ? 2 : isExtraSmallScreen ? 2 : null,
                   transition: "all 0.5s",
                   "&:hover": {
                     bgcolor: "#8750f7",
@@ -183,8 +181,7 @@ const Services = () => {
                     : isExtraSmallScreen
                     ? "column"
                     : "row",
-                  pl: isSmallScreen ? 1 : isExtraSmallScreen ? 3 : 0,
-                  pr: isSmallScreen ? 1 : isExtraSmallScreen ? 3 : 0,
+                  p: isSmallScreen ? 2 : isExtraSmallScreen ? 2 : null,
                   transition: "all 0.5s",
                   "&:hover": {
                     bgcolor: "#8750f7",
