@@ -10,7 +10,7 @@ import DefaultParagraph, { SectionParagraph } from "../components/paragraph";
 import { DefaultLink } from "../components/link";
 const Projects = () => {
   const downloadApp = () => {
-    const pdfUrl = "https://salmancheema05.github.io/portfolio/app.apk";
+    const pdfUrl = "https://portfolio-ng32.onrender.com/app.apk";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "app.apk";

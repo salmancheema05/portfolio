@@ -12,7 +12,7 @@ import useResponsive from "../hook/useResponsive";
 const Header = () => {
   const { isSmallScreen, isMediumScreen, isExtraSmallScreen } = useResponsive();
   const downloadCv = () => {
-    const pdfUrl = "https://salmancheema05.github.io/portfolio/cv.pdf";
+    const pdfUrl = "https://portfolio-ng32.onrender.com/cv.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "cv.pdf";
