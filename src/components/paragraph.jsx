@@ -1,7 +1,7 @@
 import React from "react";
 import useResponsive from "../hook/useResponsive";
 import { Typography, Box } from "@mui/material";
-const DefaultParagraph = ({ children, style }) => {
+const DefaultParagraph = ({ children, style, handler = null }) => {
   const { isSmallScreen, isExtraSmallScreen } = useResponsive();
   return (
     <Typography
@@ -10,8 +10,10 @@ const DefaultParagraph = ({ children, style }) => {
       fontWeight={500}
       sx={{
         fontSize: isSmallScreen ? 14 : isExtraSmallScreen ? 12 : 20,
+        cursor: handler ? "pointer" : null,
         ...style,
       }}
+      onClick={handler}
     >
       {children}
     </Typography>
