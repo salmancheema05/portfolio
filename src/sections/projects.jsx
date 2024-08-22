@@ -148,7 +148,7 @@ const Projects = () => {
             <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
               <Box
                 bgcolor="#140c1c"
-                width="85%"
+                width="100%"
                 borderRadius={5}
                 sx={{
                   position: "relative",
@@ -161,14 +161,14 @@ const Projects = () => {
                 }}
               >
                 <Box p={4} height={"100%"}>
-                  <img src={App2} width="" height="" />
+                  <img src={App2} width="100%" height="" />
                 </Box>
                 <Box
                   className="overlay"
                   sx={{
                     position: "absolute",
                     bottom: "-100%",
-                    width: "88%",
+                    width: "90%",
                     height: "100%",
                     p: 2,
                     transition: "bottom 0.3s ease",
