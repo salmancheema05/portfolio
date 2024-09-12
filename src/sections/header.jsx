@@ -120,7 +120,7 @@ const Header = () => {
                   />
                   <DefaultIcon
                     icon={<FaLinkedinIn fontSize={18} />}
-                    link="https://www.linkedin.com/in/salman-cheema-8a983a27a/"
+                    link="www.linkedin.com/in/salman-akbar-8a983a27a"
                   />
                   <DefaultIcon
                     icon={<FaInstagram fontSize={18} />}
